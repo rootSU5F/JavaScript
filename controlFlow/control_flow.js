@@ -4,6 +4,10 @@ let isLoggedIn = true;
 let userMessage;
 let userType = "subscriber";
 let userCategory;
+let isAuthenticated = true;
+
+//here im going to fo ternary 
+let authenticationStatus = isAuthenticated ? "Authenticated":"Not authenticated";
 
 switch (userType) {
   case "admin":
@@ -31,3 +35,4 @@ else accessLevel = "No access granted";
 console.log("access level " + accessLevel);
 console.log("User Message:", userMessage);
 console.log("User Category:", userCategory);
+console.log("Authentication Status:", authenticationStatus);
